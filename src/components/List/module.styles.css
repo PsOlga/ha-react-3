@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.listPeople {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.ulPeople {
+    height: 30px;
+    background-color: #e6e5fc;
+
+}
+.imgPeople {
+    height: 15px;
+    width: 15px;
+}
