@@ -12,7 +12,7 @@ function List() {
     { id: 6, name: "Глеб", age: 24 },
     { id: 7, name: "Дима", age: 18 },
     { id: 8, name: "Гриша", age: 20 },
-    { id: 9, name: "Серафим", age: 21 }
+
   ]);
 
   const removePerson = (id) => {
