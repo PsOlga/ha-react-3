@@ -7,13 +7,21 @@
     justify-content: center;
     display: flex;
     align-items: center;
+    
 }
 .ulPeople {
     height: 30px;
     background-color: #e6e5fc;
-
+   margin: 30px;
+   list-style-type: none;
+  
+ 
 }
 .imgPeople {
     height: 15px;
     width: 15px;
+}
+.li-person {
+    width: 140px;
+
 }

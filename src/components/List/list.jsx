@@ -1,6 +1,6 @@
 import { useState } from "react";
 import closed from "./close.png";
-import stylPeople from "./module.styles.css";
+import stylPeople from "./styles.module.css"
 
 function List() {
   const [people, setPeople] = useState([
@@ -24,8 +24,8 @@ function List() {
       <h2>Список приглашенных</h2>
       <ul className={stylPeople.ulPeople}>
         {people.map((person) => (
-          <li key={person.id}>
-            {person.name} (Возраст: {person.age})
+          <li key={person.id} className={"li-person"}>
+          (Имя:  {person.name}), ( Возраст: {person.age} )
             <button onClick={() => removePerson(person.id)}>
               <img
                 className={stylPeople.imgPeople}
