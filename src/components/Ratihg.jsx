@@ -8,10 +8,10 @@ const handleRatingClick = (value) => {
   };
 
  const ratingList = [
-    // '/imgs/stars_24.png',
-    // './imgs/stars_2.png',
-    // './imgs/stars_3.png',
-    // './imgs/stars_4.png',
+    '/imgs/stars_24.png',
+    './imgs/stars_2.png',
+    './imgs/stars_3.png',
+    './imgs/stars_4.png',
   ];
 
 

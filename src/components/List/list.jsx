@@ -1,5 +1,5 @@
 import { useState } from "react";
-import closed from "./close.png";
+import close from "./close.png";
 import stylPeople from "./styles.module.css"
 
 function List() {
@@ -21,18 +21,20 @@ function List() {
 
   return (
     <div className={stylPeople.listPeople}>
-      <h2>Список приглашенных</h2>
+      <h2 >Список приглашенных</h2>
       <ul className={stylPeople.ulPeople}>
         {people.map((person) => (
-          <li key={person.id} className={"li-person"}>
-          (Имя:  {person.name}), ( Возраст: {person.age} )
-            <button onClick={() => removePerson(person.id)}>
+          <li key={person.id} >
+            <div className={stylPeople.personContainer}>
+            <span>Имя: {person.name}</span>, <span className={stylPeople.agePeople}>Возраст: {person.age}</span>
+            <button className={stylPeople.btnClosePeople} onClick={() => removePerson(person.id)}>
               <img
-                className={stylPeople.imgPeople}
-                src={closed}
-                alt="closed"
+                className={stylPeople.closePeople}
+                src={close}
+                alt="close"
               />
             </button>
+            </div>
           </li>
         ))}
       </ul>

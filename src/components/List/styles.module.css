@@ -7,21 +7,41 @@
     justify-content: center;
     display: flex;
     align-items: center;
-    
+    flex-direction: column;
+}
+.listPeople h2 {
+    color: #070276;
+    margin: 20px;
+}
+.agePeople {
+    margin-right: 15px;
+}
+.btnClosePeople {
+    border-radius: 5px;
+    border: 1px solid #04004c;
 }
 .ulPeople {
     height: 30px;
-    background-color: #e6e5fc;
    margin: 30px;
    list-style-type: none;
-  
- 
 }
-.imgPeople {
+.personContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #dff1fc;
+    border-radius: 4px;
+  }
+.closePeople {
     height: 15px;
     width: 15px;
+    margin: 5px;
+   border-radius: 5px;
+ 
 }
-.li-person {
-    width: 140px;
 
-}
+
+
